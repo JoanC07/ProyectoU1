@@ -1,0 +1,565 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Hind,sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #fff;
+}
+
+html {
+    line-height: 1.15;
+}
+
+div {
+    display: block;
+}
+
+ul, a {
+    list-style: none;
+    text-align: left;
+    text-decoration: none !important;
+}
+/*Cabecera*/
+#header-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    height: 60px;
+    background-color: #f3f3f3;
+    align-items: center;
+    font-size: 15px;
+    justify-content: space-around;
+}
+
+#header-logo {
+    display: block;
+}
+
+#header-menu {
+    color:#f3f3f3;
+	font-size:10px;
+	line-height:70px;
+	float:left;
+}
+
+#header-menu a {
+    display:inline-block;
+	color:rgb(24, 22, 22);
+	line-height:normal;
+	font-size:20px;
+    font-weight:bold;
+    font: 150% sans-serif;	
+}
+
+#header-menu > li {
+    float:left;
+}
+
+#header-menu li a {
+    color:rgb(48, 43, 43);
+    text-decoration:none;
+    padding: 2px 12px 5px;
+    display:block;
+    justify-content: center;
+}
+
+#header-menu li p {
+    color:rgb(48, 43, 43);
+    padding:10px 12px;
+    display:block;   
+    line-height:normal;
+	font-size:20px;
+    font-weight:bold;
+    font: 150% sans-serif;	
+    margin: 25px 0px;
+}
+
+#header-menu li > ul {
+    position:absolute;
+    margin-top: 18px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+    
+}
+
+#header-menu li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    background-color: rgb(231, 238, 240);
+    width: auto;
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.fa-angle-up {
+    display: none !important;
+}
+
+#header-menu li a:hover {
+    color: orangered;
+}
+
+#header-menu li a:hover .fa-angle-down{
+    display: none !important;
+}
+
+#header-menu li a:hover .fa-angle-up{
+    display: inline !important;
+}
+
+
+#public-text span{
+    font-weight: bold;
+    color: black;
+}
+
+#header-menu > ul{
+    display:block;
+}
+
+#button-four-radius {
+    color: white;
+    background-color: orangered;
+    border-radius: 10px;
+    text-align: center;
+    padding: 12px;
+}
+
+#button-four-radius span {
+    color: white;
+}
+
+#public-text {
+    margin-left: 40%;
+}
+
+#public-text span:hover {
+    cursor: pointer;
+}
+/*Main*/
+/*Titulo*/
+#encabezado #titulo {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0px;
+    margin: 10px 40px;
+}
+#encabezado #subtitulo{
+    padding: 0px;
+    margin: 15px 40px ;
+    font-size: 14px;
+}
+/*Galeria y boton galeria*/
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 225px;
+    padding: 0px;
+    margin: 0px 40px;
+    grid-gap: 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+.Fotos:nth-child(1){
+    grid-column-start: span 2;
+    grid-row-start: span 2 ;
+}
+.imagen{
+    width: 100%;
+    height: 215x;
+    object-fit: cover;
+}
+.imagen:hover{
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+#imagena{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 425px ;
+}
+#imagenb{
+    border-top-right-radius: 10px;
+    height: 190.25px ;
+    width: 300.41px;
+}
+#imagend{
+    height: 190.25px ;
+    width: 300.41px;
+}
+#imagenf{
+    height: 190.25px ;
+    width: 300.41px;
+}
+#imagene{
+    height: 190.25px ;
+    width: 300.41px;
+}
+#imagenc{
+    border-bottom-right-radius: 10px;
+    height: 190.25px ;
+    width: 300.41px;
+}
+/*Botón*/
+.btn_ver{
+    position: absolute;
+    right: calc(12.5% - 55px);
+    bottom: calc(25% - 20px);
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 12px;
+    width: 110px;
+    height: 40px;
+    font-weight: 600;
+    background: transparent;
+    font-size: 14px;
+    z-index: 10;
+    color: #fff;
+}
+/*Formulario*/
+.precio{
+    width: 440px;
+    height: 620px;
+    position: relative;
+    top: 25px;
+    left: 65%;
+    background: rgba(243,246,249,255);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#desde , #precio{
+    margin: 10px 0 0;
+}
+input, textarea{
+    margin-bottom: 20px;
+    padding: 13px;
+    border-radius: 8px;
+    border-color: rgba(136,148,155,255);
+}
+.email{
+    width: 90%;
+}
+.nombre{
+    width: 49%;
+}
+.cell{
+    width: 49%;
+}
+.checkbox{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+
+}
+.contactar{
+    width: 100%;
+    background: orangered;
+    color: white;
+    font-size: 15px;
+    border: 0px; 
+    margin: 0% 0 2%;
+    margin-bottom: 20px;
+    padding: 13px;
+    border-radius: 8px;
+    border-color: orangered;
+}
+.ws{
+    width: 100%;
+    background: green;
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 13px;
+    border-radius: 8px;
+    border-color: green;
+    margin: 0% 0 3%;
+}
+.mensaje{
+    min-height: 100px;
+    max-height: 100px;
+    max-width: 370px;
+    min-width: 370px;
+}
+.contactar:hover{
+    cursor: pointer;
+}
+.ws:hover{
+    cursor: pointer;
+}
+#aviso{
+    font-size: 12px;
+    margin: 0%;
+}
+@media (max-width: 480px){
+    form{
+        width: 100px;
+    }
+    .contenedor{
+        width: 100px;
+    }
+}
+/*Navegacion*/
+.menu{
+    position: relative;
+    top: -580px;
+    left: 3%;
+    width: 840px;
+    height: 20px;
+    margin: 0% 0% 0% 0%;
+}
+.menuContenido a{
+    margin: 0%;
+    padding: 0%;
+    color: #5f6d72;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+.separador{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menuContenido .casa{
+    color: black;
+}
+/*Informacion y etapa*/
+.contenedor_inf{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0;
+    position: relative;
+    top: -565px;
+    left: 3%;
+    width: 840px;
+    height: 20px;
+    font-size: 14px;
+    color: #5f6d72;
+}
+.contenedor_inf .item{
+    margin: 18px;
+}
+.container_etapa{
+    grid-column: 2/4;
+    grid-row: 1;
+    border-top: unset;
+    border-left: 1px solid #cbd6dc;
+    display: flex;
+    align-items: center;
+    padding: 20px 16px;
+    margin: 0;
+    width: 745px;
+    height: 120px;
+    position: relative;
+    top: -470px;
+    left: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px #999;
+    border-left: 9px solid #3a0c3d;
+}
+.icon{
+    width: 250px;
+    height: 10px;
+}
+.etapa{
+    width: 195px;
+    height: 50px;
+}
+.descripcion_hidden{
+    right: px;
+}
+.container_etapa .descripcion_hidden{
+    font-size: 14px;
+    padding: 0% 16px;
+}
+/*Seccion y caracteristicas*/
+.seccion{
+    position: relative;
+    top: -450px;
+    left: 40px;
+}
+.seccion ,p {
+    font-size: 17px;
+}
+.info{
+    font-size: 15px;
+}
+/*Unidades*/
+.unidades{
+    position: relative;
+}
+.hab{
+    left: 02%;
+    width: 830px;
+    height: 65px;
+    position: relative;
+    top: -450px;
+    background: rgba(243,246,249,255);
+    padding: 1px ;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0% 4%;
+}
+.hab{
+    margin: 1%;
+}
+
+.hab p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0% 1%;
+    font-size: 13px;
+    color: #5f6d72;
+}
+.hab2{
+    left: 02%;
+    width: 830px;
+    height: 65px;
+    position: relative;
+    top: -450px;
+    background: rgba(243,246,249,255);
+    padding: 1px ;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1% 4%;
+}
+.hab2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0% 1%;
+    font-size: 13px;
+    color: #5f6d72;
+
+}
+.hab2{
+    margin: 1%;
+}
+/*Ubicacion*/
+.ubicacion{
+    color: #5f6d72;
+    font-size: 10px;
+    position: relative;
+    top: -450px;
+    margin: 50px;
+}
+/*Mapa*/
+.restaurante{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -460px;
+    left: 60px;    
+    display: block;
+    height: 47px;
+    width: 160px;
+    border-radius: 20px;
+    color: black;
+    font-size: 16px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid  #5f6d72;
+    background-color: transparent;
+    cursor: pointer;
+}
+.servicios{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -505px;
+    left: 240px;    
+    display: block;
+    height: 47px;
+    width: 140px;
+    border-radius: 20px;
+    color:  black;
+    font-size: 16px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid  #5f6d72;
+    background-color: transparent;
+    cursor: pointer;
+}
+.escuelas{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -550px;
+    left: 400px;    
+    display: block;
+    height: 47px;
+    width: 130px;
+    border-radius: 20px;
+    color: black;
+    font-size: 16px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid  #5f6d72;
+    background-color: transparent;
+    cursor: pointer;
+}
+.mapa{
+    position: relative;
+    top: -550px;
+    left: 50px; 
+    margin-bottom: 0px;
+}
+/*Footer*/
+.footer-container {
+    display: inline-block;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+    background-color: #3a0c3d;
+    background-image: url(https://img10.naventcdn.com/home/RPHOMv3.28.0-RC2/bg-footer.bdf46d.svg);
+    background-repeat: no-repeat;
+}
+
+.footer-container img {
+    margin: 50px 0 10px 10px;
+}
+
+.footer-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0px 50px;
+}
+
+.footer-list-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.footer-list-item a {
+    color: white;
+}
+
+
+.footer-list-item a:hover {
+    color: white;
+}
+
+.footer-list-item span {
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-list-item li {
+    margin: 5px 0 5px 20px;
+}
+
+#copyrigth {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+#copyrigth p {
+    line-height: 20px;
+    padding-top: 25px;
+    margin: 20px;
+}

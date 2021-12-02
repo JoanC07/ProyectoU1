@@ -1,0 +1,473 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Hind,sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+/*Separo por columnas*/
+.contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: " .                 .            ."
+                          "formulario   propiedades  propiedades"
+                          "formulario   propiedades  propiedades"
+                          "footer       footer       footer";
+}
+/*Para el encabezado*/
+div {
+    display: block;
+}
+
+ul, a {
+    list-style: none;
+    text-align: left;
+    text-decoration: none;
+}
+#header-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    height: 60px;
+    background-color: #f3f3f3;
+    align-items: center;
+    font-size: 15px;
+    justify-content: space-around;
+}
+
+#header-logo {
+    display: block;
+}
+
+#header-menu {
+    color:#f3f3f3;
+	font-size:10px;
+	line-height:70px;
+	float:left;
+    margin-top: -10px;
+}
+
+#header-menu a {
+    display: inline-block;
+	color:rgb(24, 22, 22);
+	line-height:normal;
+	font-size:20px;
+    font-weight:bold;
+    font: 150% sans-serif;	
+}
+
+#header-menu > li {
+    float:left;
+}
+
+#header-menu li a {
+    color:rgb(48, 43, 43);
+    text-decoration:none;
+    padding: 10px 12px -0px;
+    display:block;
+    justify-content: center;
+}
+
+#header-menu li p {
+    color:rgb(48, 43, 43);
+    padding:10px 12px;
+    display:block;   
+    line-height:normal;
+	font-size:20px;
+    font-weight:bold;
+    font: 150% sans-serif;	
+    margin: 25px 0px;
+}
+#header-menu li > ul {
+    position:absolute;
+    margin-top: 18px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+    
+}
+
+#header-menu li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    background-color: rgb(231, 238, 240);
+    width: auto;
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.detalles-casa {
+    display: flex;
+    position: relative;
+}
+
+.fa-angle-up {
+    display: none !important;
+}
+
+#header-menu li a:hover {
+    color: orangered;
+}
+
+#header-menu li a:hover .fa-angle-down{
+    display: none !important;
+}
+
+#header-menu li a:hover .fa-angle-up{
+    display: inline !important;
+}
+
+
+#public-text span{
+    font-weight: bold;
+}
+
+#header-menu > ul{
+    display:block;
+}
+
+#button-four-radius {
+    color: white;
+    background-color: orangered;
+    border-radius: 10px;
+    text-align: center;
+    padding: 12px;
+}
+
+#button-four-radius span {
+    color: white;
+}
+
+#public-text {
+    margin-left: 40%;
+    margin-right: 25px;
+}
+
+#public-text span:hover {
+    cursor: pointer;
+}
+/*Empieza los estilos para el formulario izquierdo color morado */
+
+/*Modifica el formulario de la parte izquierda */
+.ubicacion{
+    color:white;
+	font: size 15;
+	line-height:45px;
+    background-color:rgb(83, 51, 124);
+     width: 300px;
+     height: 520px;
+     margin-top: -154%;
+     padding-left: 20px;
+     border-radius:0px 0px 10px 10px ;
+     margin-left: -0.9%;
+}
+/*Modifica el cuadro en general su posicion*/
+.formulario{
+    display: grid;
+    margin: 15px;
+    height: 1200px;
+    width: 370px;
+    grid-area: formulario;
+    border: 1px solid white;
+    justify-items: center;
+}
+/* Modifica el cuadro su poscicion de arriba*/
+.encabezado{
+	text-align: center;
+    display: block;
+    text-transform: uppercase;
+	overflow:hidden; 
+	background:#341338;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+    font-weight: 5448px;
+    width :316px; 
+    margin-bottom:20px;
+    padding: 8px 2px 2px;
+    margin-bottom: -220px;
+    margin-top:-5%;
+    margin-left: -0.9%;
+    height: 60px; 
+    border-radius:10px 10px 0px 0px ;
+}
+/* Modifica el contenido del encabezado (Alquilar-Comprar-Proyectos)*/
+.encabezado a {
+	color:white;
+	padding: 10px 10px;
+	font-size:60px;
+    font-weight:bold;
+    font: 70% sans-serif;
+    	
+}
+/* Modifica el color del encabezado cuando pasen */
+.encabezado a:hover {
+	background: whitesmoke;
+}
+/* Ancho de los botones (ver mapa) */
+.cuerpo{
+	margin-bottom: 20px;
+    width: 80%;  
+}
+
+.cuerpo input{
+	width: 220px;
+    border: none;
+    margin-left: -40px; 
+}
+
+/* Modifica la parte de Tipo de inmueble*/
+.a3{
+	font-size:10px;
+	line-height:70px;
+    background-color:white;
+    border-radius:10px;
+    padding:2px 70px;
+    width: 45%;
+    height: 50px;
+}
+/* Modifica el boton Ver mapa*/
+.a2{
+    display: grid;
+    background-color:#f8652b;
+    border-radius:10px;
+    width: 90%;
+}
+/* Modifica el diseño del boton ver mapa*/
+.a2 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	color:white;
+    font-size: 15px;
+}
+/* Modifica los despliegues de la parte Habitaciones (Sin minimo) */
+.a5{
+    float:left;
+    background-color: white;
+    border-radius:10px;
+    padding:7px 5px;
+    font: 10px italic;
+    width: 106px;
+
+}
+/* Modifica los despliegues de la parte Habitaciones (sin maximo)*/
+.a6{
+    float:left;
+    background-color: white;
+    border-radius:10px;
+    padding:7px 5px;
+    font: 10px italic;
+    margin-left: 17%;
+    width: 105px;
+}
+/* Modifica el texto de los cuadros de Ubicacion y Precio */
+.a1{
+    text-align: center;
+    background-color:white;
+    border-radius:10px;
+    padding:5px 70px;
+    font: 11px sans-serif; 
+    width: 45%;
+    height: 50px;
+}
+/* Modifica el color del texto de Ubicacion y Precio*/
+.a1 h4{
+	color:black;
+}
+
+
+/*Cambia de color  el estilo de Ubicacion y Precio*/
+a:hover {
+    color:slategray;
+}
+/* Elimina los bordes rectangulares de las listas*/
+.sinborde {
+    border: 0;
+ 
+}
+/*Hace que los cuadros esten a la derecha*/
+.cajas{
+    grid-area: propiedades;
+    font-family: 'Dekko';
+        
+}
+/*Le da el diseño a las cajas*/
+.caja1{
+    text-align: center;
+    border-style: groove;
+    width: 98%;
+    background-color: aliceblue;
+    border-radius: 12px;
+/*Empieza el diseño de las cajas como tal*/
+}
+body{
+    background-color: whitesmoke;
+    font-family: sans-serif;
+  }
+  /*Tamaño del cuadro*/
+  .container{
+    margin: auto;
+    background-color: white;
+    width: 990px;
+    padding: 12px;
+  }
+  /*Bordes para el cuadro*/
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  /*Reduce el tamaño del cuadro*/
+  ul.slider{
+    position: relative;
+    width: 32%;
+    height: 205px;
+  }
+  /*Diseño del carrusel de imagene */
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  /*Reducir el tamaño de la imagen*/
+  ul.slider li img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  /*Diseño para que aparezcan las imagenes */
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  /*Hace que se mueva las imagenes */
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  /*Empieza la parte de los circulos*/
+  .menu{
+    text-align: center;
+    margin: 10px;
+  }
+  /*Posicion de los botones*/
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  /*Dimension y color de*/
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color:rebeccapurple;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+  /*Empieza el diseño de los botones de abajo*/
+  
+  .icono-whatsaap{
+    width: 32px;
+    background: rgba(39,210,103,255);
+    color: white;
+    border: none;
+    margin-bottom: 50px;
+    border-radius: 35px;
+    margin: 1% 0 2%;
+}
+/*Empieza el diseño del corazon*/
+.icono-corazon{
+    width: 9%;
+    background: white;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 45px;
+    margin: 1% 0 1%;
+    border: 0.5px solid rgb(255, 85, 0);
+
+}
+/*Empieza el diseño del contactar */
+.icono-contactar{
+    border: none;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 41px;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 12px;
+    transition: background-color .3s;
+    background-color: coral;
+    margin-left: 15px;
+}
+
+
+/**/
+/*------footer--------*/
+.footer-container {
+    display: inline-block;
+    width: 100%;
+    flex-direction: column;
+    background-color: #3a0c3d;
+    color: white;
+    background-image: url(https://img10.naventcdn.com/home/RPHOMv3.28.0-RC2/bg-footer.bdf46d.svg);
+    background-repeat: no-repeat;
+}
+
+.footer-container img {
+    margin: 50px 0 10px 10px;
+}
+
+.footer-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0px 50px;
+}
+
+.footer-list-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.footer-list-item span {
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-list-item li {
+    margin: 5px 0 5px 20px;
+}
+
+#copyrigth {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+#copyrigth p {
+    line-height: 20px;
+    margin: 25px;
+}
+
+.footer-list-item a {
+    color: white;
+}
+
+
+.footer-list-item a:hover {
+    color: white;
+}
