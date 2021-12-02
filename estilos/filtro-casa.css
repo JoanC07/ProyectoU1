@@ -419,9 +419,9 @@ body{
     display: inline-block;
     width: 100%;
     flex-direction: column;
-    background-color: #3a0c3d;
+    background-color: #2076e6;
     color: white;
-    background-image: url(https://img10.naventcdn.com/home/RPHOMv3.28.0-RC2/bg-footer.bdf46d.svg);
+
     background-repeat: no-repeat;
 }
 
