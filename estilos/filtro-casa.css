@@ -162,20 +162,13 @@ ul, a {
     grid-area: cabecera;
     border: 1px solid white;
     width: 1325px;
-    
-   
-  
-   
+
 }
 .nav {	
     color:#f4f5f5;
 	font-size:10px;
 	line-height:70px;
 	float:left;
-  
-  
-  
-  
     
 }
 .nav a {
@@ -187,8 +180,6 @@ ul, a {
 	line-height:normal;
 	font-size:15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
-   
 
 }
 ul, ol {
