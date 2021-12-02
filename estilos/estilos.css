@@ -392,9 +392,9 @@ main #main-section {
     display: inline-block;
     width: 100%;
     flex-direction: column;
+    background-color: #2076e6;
     color: white;
-    background-color: #3a0c3d;
-    background-image: url(https://img10.naventcdn.com/home/RPHOMv3.28.0-RC2/bg-footer.bdf46d.svg);
+
     background-repeat: no-repeat;
 }
 
@@ -425,15 +425,6 @@ main #main-section {
     margin: 5px 0 5px 20px;
 }
 
-.footer-list-item a {
-    color: white;
-}
-
-
-.footer-list-item a:hover {
-    color: white;
-}
-
 #copyrigth {
     background-color: rgba(0, 0, 0, 0.2);
     font-size: 14px;
@@ -442,6 +433,14 @@ main #main-section {
 
 #copyrigth p {
     line-height: 20px;
-    padding-top: 25px;
-    margin: 20px;
+    margin: 25px;
+}
+
+.footer-list-item a {
+    color: white;
+}
+
+
+.footer-list-item a:hover {
+    color: white;
 }
