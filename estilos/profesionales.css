@@ -142,6 +142,13 @@ header .boton-publicar a:hover {
 
     background-repeat: no-repeat;
 }
+.contenido{
+    width: 100%;
+    height: 50%;
+    background-color: antiquewhite;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
 
 .footer-container img {
     margin: 50px 0 10px 10px;
