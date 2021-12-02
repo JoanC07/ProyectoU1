@@ -133,3 +133,59 @@ header .boton-publicar a:hover {
     margin-top: -10px;
     
 }
+.footer-container {
+    display: inline-block;
+    width: 100%;
+    flex-direction: column;
+    background-color: #2076e6;
+    color: white;
+
+    background-repeat: no-repeat;
+}
+
+.footer-container img {
+    margin: 50px 0 10px 10px;
+}
+
+.footer-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0px 50px;
+}
+
+.footer-list-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.footer-list-item span {
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-list-item li {
+    margin: 5px 0 5px 20px;
+}
+
+#copyrigth {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+#copyrigth p {
+    line-height: 20px;
+    margin: 25px;
+}
+
+.footer-list-item a {
+    color: white;
+}
+
+
+.footer-list-item a:hover {
+    color: white;
+}
