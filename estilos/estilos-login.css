@@ -10,8 +10,8 @@
 /*Propiedad del botón naranja*/
 .btn-orange{
     color: white;
-    background-color: orangered; /*Color del fondo */
-    border-color: orangered; /*Color del borde */
+    background-color: #2076e6; /*Color del fondo */
+    border-color: #2076e6; /*Color del borde */
     cursor: pointer; /*Al pasar el cursos es puntero*/
     width: 75%;
 }
@@ -19,8 +19,8 @@
 /*Propiedad del botón naranja1*/
 .btn-orange1{
     color: white;
-    background-color: orangered;
-    border-color: orangered;
+    background-color: #2076e6;
+    border-color: #2076e6;
     cursor: pointer;
     width: 98%;
 }
@@ -69,7 +69,7 @@
 }
 /*Asignar color a un texto en específico*/
 p span{
-    color:orangered;
+    color:#2076e6;
 }
 /*Propiedad de cuadro de opciones*/
 .op{
@@ -122,13 +122,13 @@ p span{
     }
     /*se activa cuando el usuario hace clic, toca un elemento*/
     .field:focus{
-        border-color:orangered;
+        border-color:rgb(8, 61, 233);
     }
     .field1:focus{
-        border-color:orangered;
+        border-color:rgb(8, 61, 233);
     }
     .field2:focus{
-        border-color:orangered;
+        border-color:rgb(8, 61, 233);
     }
     /*Propiedad de los botones */
     .center-content{
