@@ -40,7 +40,7 @@ ul, ol {
     display:block;  
 }
 .nav li a:hover {
-    background-color:orange;
+    background-color:rgb(158, 149, 131);
 }
 .nav li ul {
     display:none;
@@ -101,6 +101,13 @@ header .boton-publicar a:hover {
 .imagencabecera{
     float: left;
     margin-top: -10px;
+}
+/*--Main--*/
+.review-lower > span {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 100px 0 20px;
 }
 /*-- Footer--*/
 .footer-container {
