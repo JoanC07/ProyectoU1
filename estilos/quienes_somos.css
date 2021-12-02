@@ -39,6 +39,7 @@ ul, ol {
     padding:10px 12px;
     display:block;  
 }
+/*Color de la cabezera */
 .nav li a:hover {
     background-color:rgb(158, 149, 131);
 }
