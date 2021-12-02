@@ -506,13 +506,14 @@ input, textarea{
     margin-bottom: 0px;
 }
 /*Footer*/
+/*------footer--------*/
 .footer-container {
     display: inline-block;
     width: 100%;
     flex-direction: column;
+    background-color: #2076e6;
     color: white;
-    background-color: #3a0c3d;
-    background-image: url(https://img10.naventcdn.com/home/RPHOMv3.28.0-RC2/bg-footer.bdf46d.svg);
+
     background-repeat: no-repeat;
 }
 
@@ -533,15 +534,6 @@ input, textarea{
     font-size: 14px;
 }
 
-.footer-list-item a {
-    color: white;
-}
-
-
-.footer-list-item a:hover {
-    color: white;
-}
-
 .footer-list-item span {
     margin: 20px;
     font-size: 18px;
@@ -560,6 +552,14 @@ input, textarea{
 
 #copyrigth p {
     line-height: 20px;
-    padding-top: 25px;
-    margin: 20px;
+    margin: 25px;
+}
+
+.footer-list-item a {
+    color: white;
+}
+
+
+.footer-list-item a:hover {
+    color: white;
 }
