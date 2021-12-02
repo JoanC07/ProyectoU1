@@ -283,7 +283,7 @@ main #main-section {
 }
 
 .btn-design > .btn:focus span {
-    border-bottom: medium solid orangered;
+    border-bottom: medium solid blue;
 }
 
 #main-menu > ul > li {
@@ -317,7 +317,7 @@ main #main-section {
     padding: 20px 50px;
     font-size: 12px;
     border-radius: 0px 30px 30px 0;
-    background-color: orangered;
+    background-color: blue;
     color: white;
     font-weight: bold;
 }
